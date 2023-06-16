@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Frostbite Foods - home </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Home Page">
+    <meta name="keywords" content="Freeze, Dried, Freeze-Dried, home, welcome, introduction, frostbite, food, shop">
+    <meta name="author" content="Trevor Futch">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: rgb(255, 249, 229);
+        }
+
+        .title {
+            background-color: #BDFF8B;
+            padding: 10px;
+            margin: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 25px;
+        }
+
+        .banner {
+            position: relative;
+            background-image: url(trevor_futch/pictures/homepage_background.jpg);
+            background-repeat: repeat;
+            padding: 10px;
+            height: 300px;
+            width: 1832px;
+            right: 10px;
+            top: 92.4px;
+        }
+
+        .banner img {
+            display: block;
+        }
+
+        .thumbnail {
+            height: 500px;
+            display: block;
+            z-index: 100;
+            cursor: pointer;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+        }
+
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+
+        .thumbnail_name {
+            font-size: 50px;
+            color: rgb(255, 139, 189);
+            -webkit-text-stroke: 1.5px;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 1.5px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+
+
+    <header style="position: fixed; width: 1850px; z-index: 9999; left: 0px; top: 0px; height: 100px;">
+        <nav>
+            <a href="home.html"> <img src="trevor_futch/pictures/frostbite_foods_logo.png" alt="Frostbite Foods Logo"
+                    height="70" style="position: absolute; left: 0px; top: 15%;"> </a>
+            <a href="#shop" style="position: absolute; left: 26%; top: 35%;">Shop</a>
+            <a href="#news" style="position: absolute; left: 51%; top: 35%;">News</a>
+            <a href="#about_us" style="position: absolute; left: 76%; top: 35%;">About Us</a>
+            <div>
+                <img src="trevor_futch/pictures/cart_icon.png" alt="Cart Icon" height="50"
+                    style="position: absolute; right: 10px; top: 25%;">
+                <p class="overlap_text" style="color: white; position: absolute; right: 25px; top: 20%;">0</p>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="banner">
+            <div class="title" style="width: fit-content; height: fit-content; left: 52%; top: 50%;">
+                <h1 class="heading">
+                    Frostbite Foods </h1>
+            </div>
+        </section>
+
+
+
+        <section
+            style="position:relative; background-color: #8BBDFF; height: 400px; top: 17px; width: 1850px; right: 8px;">
+            <h1 class="heading" style="position: relative; left: 780px; width: 10px;"> Welcome </h1>
+            <div class="title" style="width: fit-content; height: fit-content; left: 52%; top: 60%;">
+                <p style="font-size: 30px;">Welcome to Frostbite Foods! We provide high-quality freeze-dried foods and
+                    sweets that are perfect
+                    for camping, emergencies, or just a quick snack on the go! We provide info on all of our products
+                    and try our best to give you an amazing experience. Come explore our wide selection of snacks today!
+                </p>
+            </div>
+        </section>
+
+
+
+        <section id="shop" style=" height: 1800px;">
+            <h1 class="heading" style="position: absolute; top: 90%; left: 47%;"> Shop </h1>
+
+            <h2 class="thumbnail_name" style="position: relative; top: 300px; left: 250px;"> Candies</h2>
+            <a href="candies.html" style="position: relative; top: 250px;"> <img
+                    src="trevor_futch/pictures/candy_thumbnail.png" alt="Candy Category" class="thumbnail"> </a>
+
+            <h2 class="thumbnail_name" style="position: relative; bottom: 350px; left: 890px;"> Fruits </h2>
+            <a href="fruits.html" style="position: relative; bottom: 396px; left: 610px;"> <img
+                    src="trevor_futch/pictures/fruit_thumbnail.png" alt="Fruit Category" class="thumbnail"> </a>
+
+            <h2 class="thumbnail_name" style="position: relative; bottom: 350px; left: 890px;"> Meats </h2>
+            <a href="#meats.html" style="position: relative; bottom: 396px; left: 610px;"> <img
+                    src="trevor_futch/pictures/meat_thumbnail.png" alt="Meat Category" class="thumbnail"></a>
+
+            <h2 class="thumbnail_name" style="position: relative; bottom: 1630px; left: 1450px;"> Vegetables </h2>
+            <a href="#veggies.html" style="position: relative; bottom: 1675px; left: 1240px;"> <img
+                    src="trevor_futch/pictures/veggie_thumbnail.png" alt="Vegetable Category" class="thumbnail"> </a>
+
+        </section>
+    </main>
+
+
+
+    <footer style="background-color: lightgray; position: relative; height: 80px; width: 1850px; right: 8px;">
+        <p>This website was last updated</p>
+        <p id="date"></p>
+        <script>
+            let text = document.lastModified;
+            document.getElementById("date").innerHTML = text;
+        </script>
+    </footer>
+
+
+
+</body>
+
+</html>
